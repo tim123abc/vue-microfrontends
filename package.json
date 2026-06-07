@@ -1,0 +1,17 @@
+{
+  "name": "vue-vercel-microfrontends",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n shell,analytics,proxy -c cyan,magenta,green \"pnpm --filter shell dev\" \"pnpm --filter analytics dev\" \"pnpm proxy\"",
+    "proxy": "microfrontends proxy microfrontends.json --local-apps shell analytics",
+    "build": "pnpm --filter shell build && pnpm --filter analytics build",
+    "preview:shell": "pnpm --filter shell preview",
+    "preview:analytics": "pnpm --filter analytics preview"
+  },
+  "devDependencies": {
+    "@vercel/microfrontends": "2.3.6",
+    "concurrently": "9.2.1"
+  },
+  "packageManager": "pnpm@10.12.1"
+}

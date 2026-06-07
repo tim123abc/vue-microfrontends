@@ -1,0 +1,25 @@
+{
+  "$schema": "https://openapi.vercel.sh/microfrontends.json",
+  "applications": {
+    "shell": {
+      "development": {
+        "local": 3100,
+        "fallback": "localhost:3100"
+      }
+    },
+    "analytics": {
+      "routing": [
+        {
+          "paths": ["/analytics", "/analytics/:path*"]
+        }
+      ],
+      "development": {
+        "local": 3101,
+        "fallback": "localhost:3101"
+      }
+    }
+  },
+  "options": {
+    "localProxyPort": 3124
+  }
+}
