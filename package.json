@@ -11,7 +11,11 @@
   },
   "devDependencies": {
     "@vercel/microfrontends": "2.3.6",
-    "concurrently": "9.2.1"
+    "concurrently": "9.2.1",
+    "ws": "^8.21.0"
   },
-  "packageManager": "pnpm@10.12.1"
+  "packageManager": "pnpm@10.12.1",
+  "dependencies": {
+    "remote-components": "^0.4.9"
+  }
 }

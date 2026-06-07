@@ -1,3 +1,4 @@
+import "remote-components/host/html";
 import { createApp } from "vue";
 import App from "./App.vue";
 import { installNavigationHints } from "./navigation-hints.js";

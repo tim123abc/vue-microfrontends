@@ -10,7 +10,11 @@
     "analytics": {
       "routing": [
         {
-          "paths": ["/analytics", "/analytics/:path*"]
+          "paths": [
+            "/analytics",
+            "/analytics/:path*",
+            "/components/header"
+          ]
         }
       ],
       "development": {

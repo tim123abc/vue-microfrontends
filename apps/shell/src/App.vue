@@ -20,13 +20,19 @@ const cards = [
 
 <template>
   <main class="page">
-    <nav class="topbar" aria-label="Primary">
-      <a class="brand" href="/">Vue MFEs</a>
-      <div class="links">
-        <a aria-current="page" href="/">Shell</a>
-        <a href="/analytics/">Analytics</a>
-      </div>
-    </nav>
+    <remote-component
+      class="remote-header"
+      src="/components/header"
+      aria-label="Remote header"
+    >
+      <nav class="topbar" aria-label="Primary">
+        <a class="brand" href="/">Vue MFEs</a>
+        <div class="links">
+          <a aria-current="page" href="/">Shell</a>
+          <a href="/analytics/">Analytics</a>
+        </div>
+      </nav>
+    </remote-component>
 
     <section class="hero">
       <p class="eyebrow">Vercel Microfrontends</p>
