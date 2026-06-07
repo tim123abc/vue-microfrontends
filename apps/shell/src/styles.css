@@ -22,6 +22,11 @@ a {
   display: block;
 }
 
+.remote-footer {
+  display: block;
+  margin-top: 2rem;
+}
+
 .page {
   min-height: 100vh;
   background:
@@ -132,6 +137,18 @@ h1 {
   color: #526158;
   line-height: 1.5;
   margin: 0.75rem 0 0;
+}
+
+.local-footer {
+  align-items: center;
+  border-top: 1px solid rgba(22, 32, 27, 0.1);
+  color: #526158;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 1.25rem;
 }
 
 @media (max-width: 720px) {

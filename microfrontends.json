@@ -13,7 +13,8 @@
           "paths": [
             "/analytics",
             "/analytics/:path*",
-            "/components/header"
+            "/components/header",
+            "/components/footer"
           ]
         }
       ],

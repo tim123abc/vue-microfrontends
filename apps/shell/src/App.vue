@@ -51,5 +51,16 @@ const cards = [
         <p>{{ card.detail }}</p>
       </article>
     </section>
+
+    <remote-component
+      class="remote-footer"
+      src="/components/footer"
+      aria-label="Remote footer"
+    >
+      <footer class="local-footer">
+        <span><strong>Local footer fallback</strong></span>
+        <span>Waiting for the analytics remote footer.</span>
+      </footer>
+    </remote-component>
   </main>
 </template>
